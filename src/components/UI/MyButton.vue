@@ -1,57 +1,51 @@
 <template>
     <body>
-        <slot></slot>
-        <div class="container">
-    <div class="row cf">
-      <div class="six col">
-        <a href="#" class="button1" id="button-5">Task Manager<br/><br/>
-            Создайте свой профиль
-            и добавляйте<br/> 
-            новые задачи в одном месте
-        </a>
-      </div>
-    </div>
-    <div class="row cf">
-      <div class="six col">
-        <a href="#" class="button2" id="button-5">Messenger<br/><br/>
-            Переписывайтесь с друзьями<br/> 
-            и обсуждайте проекты вместе
-        </a>
-      </div>
-    </div>
-    <div class="row cf">
-      <div class="six col">
-        <a href="#" class="button3" id="button-5">И другое</a>
-      </div>
-    </div>
-    <div class="row cf">
-      <div class="six col">
-        <a href="#" class="button4" id="button-5">О нас</a>
-      </div>
-    </div>
-  </div>
-        <!--<section>
-            <div id="wrap">
-                <div> <a class="btn-slide" href="#" >
-                    <span class="circle">
-                        <i class="fa-solid fa-film"></i>        
-                    </span>
-  
-                    <span class="title">Task Manager</span>
-                     <span class="title title-hover">BIBA</span>
-                    </a> 
-                </div>
-                <div> <a class="btn-slide" href="#" >
-                    <span class="circle">
-                        <i class="fa fa-save"></i>
-                    </span>
-   
-                    <span class="title" > Hover Button</span>
-                    <span class="title title-hover">Download Now</span>
-                    </a> 
-                </div>
+      <slot></slot>
+    <div class="border"></div>
+    <div class="circle"></div>
+    <div class="border1"></div>
+    <div class="circle1"></div>
+    <div class="border2"></div>
+    <div class="circle2"></div>
+      <div class="container">
+        <div class="row cf">
+            <div class="six col">
+              <a href="#" class="manager" id="button-5">Task Manager<br/><br/>
+                  Создайте свой профиль
+                  и добавляйте<br/> 
+                  новые задачи в одном месте
+              </a>
             </div>
-        </section>-->
+        </div>
+          <div class="row cf">
+            <div class="six col">
+              <a href="#" class="messenger" id="button-5">Messenger<br/><br/>
+                  Переписывайтесь с друзьями<br/> 
+                  и обсуждайте проекты вместе
+              </a>
+            </div>
+          </div>
+          <div class="row cf">
+            <div class="six col">
+              <a href="#" class="music" id="button-5">Music<br/><br/>
+                  Слушайте вашу любимую музыку,<br/>
+                  пока обсуждаете проекты
+              </a>
+            </div>
+          </div>
+          <div class="row cf">
+            <div class="six col">
+              <a href="#" class="registration" id="button-5">Registration<br/><br/>
+                  Создайте свой уникальный профиль
+              </a>
+            </div>
+          </div>
+          <div class="row cf">
+            <div class="six col">
+              <a href="#" class="aboutus" id="button-5">О нас</a>
+            </div>
+          </div>
+      </div>
     </body>
 </template>
 
@@ -62,6 +56,75 @@ export default {
 </script>
 
 <style>
+
+.circle {
+  width: 720px; 
+  height: 720px;
+  background: #BBE7B7;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 500px; 
+  left: -150px;
+  z-index: 2;
+}
+
+.border {
+  width: 720px; 
+  height: 720px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 520px; 
+  left: -170px;
+  z-index: 3;
+}
+
+.circle1 {
+  width: 300px; 
+  height: 300px;
+  background: #BBE7B7;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 200px; 
+  left: -100px;
+  z-index: 2;
+}
+
+.border1 {
+  width: 300px; 
+  height: 300px;
+  border: 2px solid #629C5D;
+  border-radius: 50%;
+  position: absolute;
+  top: 180px; 
+  left: -120px;
+  z-index: 3;
+}
+
+.circle2 {
+  width: 150px; 
+  height: 150px;
+  background: #BBE7B7;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 320px; 
+  left: 250px;
+  z-index: 1;
+}
+
+.border2 {
+  width: 150px; 
+  height: 150px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 330px; 
+  left: 240px;
+  z-index: 2;
+}
 
 html, body{
   width: 100%;
@@ -113,7 +176,7 @@ a{
 
 /* ALL BUTTONS */
 
-.button1{
+.manager{
   display: inline-block;
   padding: 20px 50px;
   margin: 10px 10px;
@@ -122,40 +185,53 @@ a{
   left: -250px;
   top: 100px;
   text-align: left;
+  z-index: 2;
 }
 
-.button2{
+.messenger{
+  display: inline-block;
+  padding: 20px 50px;
+  margin: 10px 10px;
+  position: relative;
+  color: #ecf0f1;
+  left: 400px;
+  top: -80px;
+  text-align: left;
+  z-index: 4;
+}
+
+.music{
   display: inline-block;
   padding: 20px 50px;
   margin: 10px 10px;
   position: relative;
   color: #ecf0f1;
   left: -250px;
-  top: 200px;
+  top: 100px;
   text-align: left;
   z-index: 4;
 }
 
-.button3{
-  display: inline-block;
-  padding: 20px 50px;
-  margin: 10px 10px;
-  position: relative;
-  color: #ecf0f1;
-  left: -250px;
-  top: 300px;
-  text-align: left;
-  z-index: 4;
-}
-
-.button4{
+.aboutus{
   display: inline-block;
   padding: 20px 50px;
   margin: 20px 10px;
   position: relative;
   color: #ecf0f1;
-  top: 450px;
+  top: 250px;
   left: 220px;
+  text-align: left;
+  z-index: 4;
+}
+
+.registration{
+  display: inline-block;
+  padding: 20px 50px;
+  margin: 10px 10px;
+  position: relative;
+  color: #ecf0f1;
+  top: -80px;
+  left: 400px;
   text-align: left;
   z-index: 4;
 }
@@ -171,7 +247,7 @@ a{
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #610DA8;
+  background-color: #629C5D;
   top: 0;
   left: -100%;
   -webkit-transition: all 0.3s ease-in-out;
@@ -194,85 +270,4 @@ a{
   right: 0;
 }
 
-/*#wrap {
-  text-align: left;
-  z-index: 10;
-}
-
-.fa { 
-    font-size: 19px; 
-    width: 20px; 
-}
-
-.btn-slide { 
-    position: relative;
-    display: inline-block; 
-    height: 50px;
-    width: 260px;
-    line-height: 50px;
-    margin: 25px 0;
-    padding: 0px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #610DA8 0%,#610DA8 100%);
-        }
-        
-.btn-slide:active { 
-    -webkit-transform: scale(0.98);
-    transform: scale(0.96); }
-    
-.btn-slide:hover { 
-    background: linear-gradient(-135deg, #610DA8 0%,#610DA8 100%); }
-        
-.btn-slide span.circle { 
-    display: block;
-    background-color: #fff;
-    color: #e570e7;
-    position: absolute;
-    margin: 5px;
-    height: 40px; 
-    width: 40px;
-    top: 0; left: 0;
-    border-radius: 50%;
-    transition: all 1.5s ease;
- }
-        
-.btn-slide:hover span.circle { 
-    left: 100%;
-    margin-left: -45px;
-    background-color: #fff;
-    color: #79f1fc; }
-        
-.btn-slide span.title { 
-    font-family: 'Nunito Sans';
-    position: absolute;
-    left: 85px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: #fff;
-    transition: all 1.5s linear; 
- }
-        
-.btn-slide span.title-hover { opacity: 0;}
-.btn-slide:hover span.title { opacity: 0; }
-.btn-slide:hover span.title-hover { opacity: 1; left: 60px; }   
-    
-@media (max-width: 540px) {
-  h1 { font-size: 36px; }
-  p { font-size: 20px; }
-  
-  .btn-slide { width: 240px; }
-}
-
-    /*.btn {
-        border: none;
-        background: none;
-        font: 27px "Times New Roman", sans-serif;
-    }
-
-    .btn2 {
-        border: none;
-        background: none;
-        font: 27px "Times New Roman", sans-serif;
-
-    }*/
 </style>

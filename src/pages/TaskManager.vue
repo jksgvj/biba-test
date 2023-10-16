@@ -1,11 +1,15 @@
 <template>
-    <div>Task manager</div>
+    <div>
+
+    </div>
 </template>
 
 <script>
+export default {
 
+}
 </script>
 
 <style scoped>
-
+    
 </style>

@@ -26,7 +26,7 @@ export default {
 
     .subname {
         margin: auto;
-        margin-top: -20px;
+        margin-top: -201px;
         text-align: center;
         font-size: 32px;
         font: "Fira Sans", sans-serif;

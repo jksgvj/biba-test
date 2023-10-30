@@ -1,7 +1,6 @@
 <template>
-    <div>
-        <h1>fffff</h1>
-    </div>
+    <div class="name">BIBA</div>
+    <div class="subname">Your personal assistant</div>
 </template>
 
 <script>

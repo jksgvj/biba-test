@@ -1,15 +1,20 @@
 import { createRouter, createWebHistory } from "vue-router"
-import Main from "@/pages/Main"
 import AboutUs from "@/pages/AboutUs"
+import Messenger from "@/pages/Messenger"
+import TaskManager from "@/pages/TaskManager"
 
 const routes = [
     {
-        path: '/',
-        component: Main
-    },
-    {
         path: '/aboutus',
         component: AboutUs
+    },
+    {
+        path: '/messenger',
+        component: Messenger
+    },
+    {
+        path: '/manager',
+        component: TaskManager
     },
 ]
 

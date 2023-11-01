@@ -1,48 +1,48 @@
 <template>
     <body>
       <slot></slot>
-    <div class="border"></div>
+    <!--<div class="border"></div>
     <div class="circle"></div>
     <div class="border1"></div>
     <div class="circle1"></div>
     <div class="border2"></div>
-    <div class="circle2"></div>
+    <div class="circle2"></div>-->
       <div class="container">
         <div class="row cf">
             <div class="six col">
-              <a href="#" class="manager" id="button-5">Task Manager<br/><br/>
+              <a href="/manager" class="manager" id="button-5">Task Manager<br><br>
                   Создайте свой профиль
-                  и добавляйте<br/> 
+                  и добавляйте<br> 
                   новые задачи в одном месте
               </a>
             </div>
         </div>
           <div class="row cf">
             <div class="six col">
-              <a href="#" class="messenger" id="button-5">Messenger<br/><br/>
-                  Переписывайтесь с друзьями<br/> 
+              <a href="/messenger" class="messenger" id="button-5">Messenger<br><br>
+                  Переписывайтесь с друзьями<br> 
                   и обсуждайте проекты вместе
               </a>
             </div>
           </div>
           <div class="row cf">
             <div class="six col">
-              <a href="#" class="music" id="button-5">Music<br/><br/>
-                  Слушайте вашу любимую музыку,<br/>
+              <a href="/music" class="music" id="button-5">Music<br><br>
+                  Слушайте вашу любимую музыку,<br>
                   пока обсуждаете проекты
               </a>
             </div>
           </div>
           <div class="row cf">
             <div class="six col">
-              <a href="#" class="registration" id="button-5">Registration<br/><br/>
+              <a href="/registration" class="registration" id="button-5">Registration<br><br>
                   Создайте свой уникальный профиль
               </a>
             </div>
           </div>
           <div class="row cf">
             <div class="six col">
-              <a href="#" class="aboutus" id="button-5">О нас</a>
+              <a href="/aboutus" class="aboutus" id="button-5">О нас</a>
             </div>
           </div>
       </div>

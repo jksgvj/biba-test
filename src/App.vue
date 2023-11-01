@@ -1,7 +1,7 @@
 <template>
-    <div class="name">BIBA</div>
+    <!--<div class="name">BIBA</div>
     <div class="subname">Your personal assistant</div>
-    <my-button/>
+    <my-button/>-->
     <router-view/>
 </template>
 

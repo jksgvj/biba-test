@@ -1,16 +1,14 @@
 <template>
     <a class="btn" href="/">BIBA</a>
-    <div class="subname">Messenger</div>
+    <div class="subname">Music</div>
 </template>
 
 <script>
-export default {
 
-}
 </script>
 
-<style scoped>
-     .btn {
+<style>
+    .btn {
         margin: auto;
         text-align: center;
         display:block;
@@ -25,4 +23,5 @@ export default {
         font-size: 32px;
         font: "Fira Sans", sans-serif;
     }
+
 </style>

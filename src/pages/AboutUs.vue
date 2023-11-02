@@ -1,5 +1,5 @@
 <template>
-    <div class="name">BIBA</div>
+    <a class="btn" href="/">BIBA</a>
     <div class="subname">About Us</div>
     <div>
         <div class="h2">Главный создатель сайта - БИБА</div>
@@ -22,11 +22,12 @@ export default{
 </script>
 
 <style>
-    .name {
+    .btn {
         margin: auto;
         text-align: center;
         display:block;
         font: 110px "Times New Roman", sans-serif;
+        color: black;
     }
 
     .subname {

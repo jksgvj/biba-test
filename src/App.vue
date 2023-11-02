@@ -1,16 +1,18 @@
 <template>
-    <!--<div class="name">BIBA</div>
-    <div class="subname">Your personal assistant</div>
-    <my-button/>-->
-    <router-view/>
+    <div id="app">
+        <router-view/>
+    </div>
 </template>
 
 <script>
 import MyButton from "@/components/UI/MyButton";
+import Main from "@/pages/Main.vue";
 
 export default {
-    components: {
+    name: 'app',
+    components: { 
         MyButton,
+        Main
     },
 
 }
@@ -23,6 +25,7 @@ export default {
         text-align: center;
         display:block;
         font: 110px "Times New Roman", sans-serif;
+        
     }
 
     .subname {
@@ -32,14 +35,4 @@ export default {
         font-size: 32px;
         font: "Fira Sans", sans-serif;
     }
-
-    /*button{
-        text-align: center;
-        display: block;
-        color: #000000;
-        padding: 0;
-        border: none;
-        background: none;
-        font-style: normal;
-    }*/
 </style>

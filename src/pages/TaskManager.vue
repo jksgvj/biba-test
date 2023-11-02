@@ -1,5 +1,5 @@
 <template>
-    <div class="name">BIBA</div>
+    <a class="btn" href="/">BIBA</a>
     <div class="subname">Task Manager</div>
 </template>
 
@@ -10,11 +10,12 @@ export default {
 </script>
 
 <style scoped>
-    .name {
+    .btn {
         margin: auto;
         text-align: center;
         display:block;
         font: 110px "Times New Roman", sans-serif;
+        color: black;
     }
 
     .subname {

@@ -1,16 +1,16 @@
 <template>
     <body>
       <slot></slot>
-    <!--<div class="border"></div>
+    <div class="border"></div>
     <div class="circle"></div>
     <div class="border1"></div>
     <div class="circle1"></div>
     <div class="border2"></div>
-    <div class="circle2"></div>-->
+    <div class="circle2"></div>
       <div class="container">
         <div class="row cf">
             <div class="six col">
-              <a href="/manager" class="manager" id="button-5">Task Manager<br><br>
+              <a class="manager" id="button-5" @click="$router.push('/manager')">Task Manager<br><br>
                   Создайте свой профиль
                   и добавляйте<br> 
                   новые задачи в одном месте

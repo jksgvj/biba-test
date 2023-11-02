@@ -1,21 +1,32 @@
 <template>
-    <a class="btn" href="/">BIBA</a>
-    <div class="subname">Messenger</div>
+    <div>
+        <div class="name">BIBA</div>
+        <div class="subname">Your personal assistant</div>
+        <my-button/>
+        <router-view/>
+    </div>
 </template>
 
 <script>
+import MyButton from "@/components/UI/MyButton";
+
 export default {
+    name: 'app',
+    components: {
+        MyButton,
+    },
 
 }
 </script>
 
 <style scoped>
-     .btn {
+
+    .name {
         margin: auto;
         text-align: center;
         display:block;
         font: 110px "Times New Roman", sans-serif;
-        color: black;
+        
     }
 
     .subname {

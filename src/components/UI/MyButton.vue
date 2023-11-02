@@ -10,7 +10,7 @@
       <div class="container">
         <div class="row cf">
             <div class="six col">
-              <a class="manager" id="button-5" @click="$router.push('/manager')">Task Manager<br><br>
+              <a href="/manager" class="manager" id="button-5">Task Manager<br><br>
                   Создайте свой профиль
                   и добавляйте<br> 
                   новые задачи в одном месте

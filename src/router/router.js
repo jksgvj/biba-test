@@ -5,6 +5,7 @@ import TaskManager from "@/pages/TaskManager"
 import Music from "@/pages/Music"
 import Main from "@/pages/Main"
 import Registration from "@/pages/Registration.vue";
+import Authorization from "@/pages/Authorization.vue";
 import Account from "@/pages/Account.vue";
 
 const routes = [
@@ -31,6 +32,10 @@ const routes = [
     {
         path: '/registration',
         component: Registration
+    },
+    {
+        path: '/authorization',
+        component: Authorization
     },
     {
         path: '/account',

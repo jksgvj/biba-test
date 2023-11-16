@@ -1,30 +1,25 @@
 <template>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <a class="btn" href="/">BIBA</a>
-    <div class="subname">Registration</div>
+    <div class="subname">Authorization</div>
     <div class="conteiner mt-4">
         <div class="row">
             <div class="col-sm-6 mx-auto">
                 <form @submit.prevent="registerUser" novalidate>
                   <transition name="slide-fade">
                     <div v-show="step===1" class="step">
-                    <p class="br"></p><div class="text-field">
-                          <label class="text-field__label" for="name">Имя</label>
-                          <input class="text-field__input"
-                                v-model="formReg.name" type="text" id="name" placeholder="Введите имя">
-                      </div>
-
+                    <p class="br"></p>
                       <div class="text-field">
-                          <label class="text-field__label" for="email">Email</label>
-                          <input class="text-field__input" v-model="formReg.email" type="text" id="Email" placeholder="Введите email">
+                          <label class="text-field__label" for="email">Логин</label>
+                          <input class="text-field__input" v-model="formReg.login" type="text" id="login" placeholder="Введите логин">
                       </div>
 
                       <div class="text-field">
                           <label class="text-field__label" for="password">Пароль</label>
                           <input class="text-field__input" v-model="formReg.password" type="password" id="password" placeholder="Введите пароль">
                       </div>
-                      <a href="/account" @click="next" type="submit" class="green">Регистрация</a>
-                      <a href="/authorization" type="submit" class="auth">Есть аккаунт</a>
+                      <a href="" @click="next" type="submit" class="green">Войти</a>
+                      <a href="/registration" type="submit" class="auth">Нет аккаунта</a>
                     </div>
                   </transition>
                     <!-- <a type="submit" class="green" href="/account">Регистрация</a> -->
@@ -41,7 +36,6 @@ export default {
     return {
       step: 1,
       formReg: {
-        name: '',
         email: '',
         password: ''
       }
@@ -59,8 +53,8 @@ export default {
       }
     },
     registerUser() {
-      console.log('Регистрация прошла успешно')
-      // console.log(this.formReg.name)
+      console.log('Вход успешно выполнен!')
+    //   console.log(this.formReg.name)
     }
   }
 }

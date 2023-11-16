@@ -1,6 +1,7 @@
 <template>
     <a class="btn" href="/">BIBA</a>
     <div class="subname">Messenger</div>
+    
 </template>
 
 <script>
@@ -24,5 +25,7 @@ export default {
         text-align: center;
         font-size: 32px;
         font: "Fira Sans", sans-serif;
+        
     }
+
 </style>

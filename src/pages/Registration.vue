@@ -2,6 +2,12 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <a class="btn" href="/">BIBA</a>
     <div class="subname">Registration</div>
+    <div class="border1"></div>
+    <div class="circle1"></div>
+    <div class="border2"></div>
+    <div class="circle2"></div>
+    <div class="border3"></div>
+    <div class="circle3"></div>
     <div class="conteiner mt-4">
         <div class="row">
             <div class="col-sm-6 mx-auto">
@@ -67,6 +73,80 @@ export default {
 </script>
 
 <style scoped>
+    .circle1 {
+        width: 300px; 
+        height: 300px;
+        background: #BBE7B7;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        top: 200px; 
+        left: -100px;
+        z-index: -2;
+        filter: blur(3px);
+    }
+
+    .border1 {
+        width: 300px; 
+        height: 300px;
+        border: 1px solid #629C5D;
+        border-radius: 50%;
+        position: absolute;
+        top: 180px; 
+        left: -120px;
+        z-index: -1;
+        filter: blur(3px);
+    }
+
+    .circle2 {
+        width: 150px; 
+        height: 150px;
+        background: #BBE7B7;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        top: 500px; 
+        left: 1150px;
+        z-index: -2;
+        filter: blur(3px);
+    }
+
+    .border2 {
+        width: 150px; 
+        height: 150px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 510px; 
+        left: 1140px;
+        z-index: -1;
+        filter: blur(3px);
+    }
+
+    .circle3 {
+        width: 300px; 
+        height: 300px;
+        background: #BBE7B7;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        top: 110px; 
+        left: 1210px;
+        z-index: -2;
+        filter: blur(3px);
+    }
+
+    .border3 {
+        width: 300px; 
+        height: 300px;
+        border: 1px solid #629C5D;
+        border-radius: 50%;
+        position: absolute;
+        top: 90px; 
+        left: 1200px;
+        z-index: -1;
+        filter: blur(3px);
+    }
     .btn {
         margin: auto;
         text-align: center;

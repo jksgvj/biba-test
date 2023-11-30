@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <router-view/>
+        <todo-list v-bind:todos="todos"></todo-list>
     </div>
 </template>
 
@@ -9,12 +10,11 @@ import MyButton from "@/components/UI/MyButton";
 import Main from "@/pages/Main.vue";
 
 export default {
-    name: 'app',
-    components: { 
+        name: 'app',
+        components: {
         MyButton,
-        Main
+        Main,
     },
-
 }
 </script>
 

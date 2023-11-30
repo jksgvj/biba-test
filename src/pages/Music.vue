@@ -216,16 +216,15 @@
     }
 
     .rectangle1 {
-        width: 770px;
+        width: 1000px;
         height: 800px;
         background: #BBE7B7;
         position: absolute;
         margin: auto;
         border-radius: 10px;
         z-index: -1;
-        /* top:  20%;
-        left: 11%; */
-        top: 170px;
-        left: center;
+        /* top:  20%; */
+        left: 17%;
+        top: 160px;
     } 
 </style>

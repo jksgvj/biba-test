@@ -41,7 +41,7 @@ export default {
     .border {
         width: 720px; 
         height: 720px;
-        border: 2px solid rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
         border-radius: 50%;
         position: absolute;
         top: 520px; 
@@ -64,7 +64,7 @@ export default {
     .border1 {
         width: 300px; 
         height: 300px;
-        border: 2px solid #629C5D;
+        border: 1px solid #629C5D;
         border-radius: 50%;
         position: absolute;
         top: 180px; 
@@ -87,7 +87,7 @@ export default {
     .border2 {
         width: 150px; 
         height: 150px;
-        border: 2px solid #ffffff;
+        border: 1px solid #ffffff;
         border-radius: 50%;
         position: absolute;
         top: 330px; 

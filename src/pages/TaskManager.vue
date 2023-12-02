@@ -31,8 +31,12 @@
             аналогов.
         </p>
     </div>
-    <div class="rectangle-block2">Проект 3</div>
-    <div class="rectangle-block3">Проект 4</div> -->
+    <div class="rectangle-block2">
+        <button class="new">Новый проект</button>
+    </div>
+    <div class="rectangle-block3">
+        <button class="new">Новый проект</button>
+    </div> -->
 </template>
 
 <script>
@@ -113,5 +117,16 @@ export default {
         line-height:1.8;
         margin:-562px 0 0 1140px; 
         border-radius: 15px;
+    }
+
+    .new{
+        background-color: #629C5D;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 15px;
+        color: white;
+        width: 160px;
+        height: 40px;
     } */
 </style>

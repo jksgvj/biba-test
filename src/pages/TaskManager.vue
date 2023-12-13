@@ -1,11 +1,8 @@
 <template>
-    <a class="btn" href="/">BIBA</a>
+    <a class="btn" href="/">B<span class="t">&</span>B</a>
     <div class="subname">Task Manager</div>
-    <!-- <div class="rectangle-block">Проект 1
-        <p>
-            Название проекта: 
-            Biba
-        </p>
+    <div class="rectangle-block">
+        <center>B&B</center>
         <p>
             Описание проекта:
             Первый помощник
@@ -15,11 +12,8 @@
             мессенджер.
         </p>
     </div>
-    <div class="rectangle-block1">Проект 2
-        <p>
-            Название проекта: 
-            Густав
-        </p>
+    <div class="rectangle-block1">
+        <center>Густав</center>
         <p>
             Описание проекта:
             Высокоразвитый бот,
@@ -36,19 +30,21 @@
     </div>
     <div class="rectangle-block3">
         <button class="new">Новый проект</button>
-    </div> -->
+    </div>
 </template>
 
 <script>
 
 export default {
-   
+    methods: fetch("http://localhost:8001/create", {}).then((data) => console.log(data))
+    
 }
 </script>
 
 <style scoped>
     .btn {
         margin: auto;
+        width: 300px;
         text-align: center;
         display:block;
         font: 110px "Times New Roman", sans-serif;
@@ -63,7 +59,7 @@ export default {
         font: "Fira Sans", sans-serif;
     }
 
-    /* .rectangle-block {
+    .rectangle-block {
         width:250px;
         height:500px;
         padding:30px 20px;
@@ -128,5 +124,5 @@ export default {
         color: white;
         width: 160px;
         height: 40px;
-    } */
+    }
 </style>

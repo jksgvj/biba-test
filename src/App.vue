@@ -1,29 +1,32 @@
 <template>
     <div id="app">
-        <Todos/>
+        <!-- <Todos/> -->
         <router-view/>
-        <todo-list v-bind:todos="todos"></todo-list>
+        <!-- <todo-list v-bind:todos="todos"></todo-list> -->
+        <!-- <h3 class="p-3 text-center">Vue HTTP GET Requests with Fetch</h3> -->
+        <get-request/>
+        <get-request-async-await/>
+        <get-request-error-handling/>
+        <get-request-set-headers/>
     </div>
 </template>
 
 <script>
 import MyButton from "@/components/UI/MyButton";
 import Main from "@/pages/Main.vue";
-import { onMounted } from '@vue/runtime-core'
-  import Todos from './components/Todos/Todos.vue'
+
+import GetRequestAsyncAwait from "./GetRequestAsyncAwait";
+import GetRequestErrorHandling from "./GetRequestErrorHandling";
+
 
 export default {
         name: 'app',
         components: {
         MyButton,
         Main,
-        Todos
+        GetRequestAsyncAwait,
+        GetRequestErrorHandling,
     },
-    stup(){
-      onMounted(() => {
-        console.log(" b m");
-      })
-    }
 }
 </script>
 

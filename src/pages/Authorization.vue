@@ -1,6 +1,6 @@
 <template>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-    <a class="btn" href="/">BIBA</a>
+    <a class="btn" href="/">B<span class="t">&</span>B</a>
     <div class="subname">Authorization</div>
     <div class="border1"></div>
     <div class="circle1"></div>
@@ -144,6 +144,7 @@ export default {
     }
     .btn {
         margin: auto;
+        width: 300px;
         text-align: center;
         display:block;
         font: 110px "Times New Roman", sans-serif;

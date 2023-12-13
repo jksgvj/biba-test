@@ -1,5 +1,5 @@
 <template>
-    <a class="btn" href="/">BIBA</a>
+    <a class="btn" href="/">B<span class="t">&</span>B</a>
     <div class="subname">Messenger</div>
   <body>
     <!-- Main container -->
@@ -127,10 +127,15 @@ export default {
 <style scoped>
      .btn {
         margin: auto;
+        width: 300px;
         text-align: center;
         display:block;
         font: 110px "Times New Roman", sans-serif;
         color: black;
+    }
+
+    .t {
+        font: 70px "Times New Roman", sans-serif;
     }
 
     .subname {

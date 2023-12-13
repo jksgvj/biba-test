@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="name">BIBA</div>
+        <div class="name">B<span class="t">&</span>B</div>
         <div class="subname">Your personal assistant</div>
         <my-button/>
         <router-view/>

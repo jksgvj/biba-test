@@ -1,5 +1,5 @@
 <template>
-    <a class="btn" href="/">BIBA</a>
+    <a class="btn" href="/">B<span class="t">&</span>B</a>
     <div class="subname">Music</div>
     <main>
         <section class="player">
@@ -105,6 +105,7 @@
 <style>
     .btn {
         margin: auto;
+        width: 300px;
         text-align: center;
         display: block;
         font: 110px "Times New Roman", sans-serif;
